@@ -1,0 +1,307 @@
+:root {
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --main-title-color: #ffffff;
+  --accent-color: #2196f3;
+}
+
+body {
+  width: 1600px;
+  font-family: "Roboto", sans-serif;
+  background: var(--main-title-color);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1540px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* HEDER!!!!!!!!!!!!! */
+
+.header-div {
+  display: flex;
+  align-items: center;
+
+  height: 80px;
+}
+.logo {
+  margin-left: 216px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.logo-one {
+  color: #000;
+}
+
+/* силки!!!!!!!!!!!!!! */
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-list {
+  display: flex;
+  margin-left: 92px;
+}
+
+.heder-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.heder-link:hover,
+.heder-link:focus {
+  color: var(--accent-color);
+}
+/* телефон емеіл */
+.header-nav {
+  display: flex;
+  margin-left: auto;
+}
+.header-nav .header-nav-item + .header-nav-item {
+  margin-left: 50px;
+  margin-right: 215px;
+}
+
+.header-mail-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.header-mail-tel:hover,
+.header-mail-tel:focus {
+  color: var(--accent-color);
+}
+/* герой!!!!!!!! */
+
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  height: 600px;
+}
+
+.hero-text {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  padding-top: 200px;
+  padding-left: 436px;
+  padding-right: 447px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.hero-button {
+  background-color: var(--accent-color);
+
+  font-style: normal;
+  width: 200px;
+  height: 50px;
+  color: var(--main-title-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* опис!!!!!!!!! */
+
+.about-list {
+  display: flex;
+  margin-top: 95px;
+  margin: 95px 200px 115px 200px;
+}
+.about-item {
+  flex: 1 1 auto;
+  margin: 0 15px;
+  width: 270px;
+  height: 101px;
+}
+.about-title {
+  margin: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.about-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* РОБОТА фото!!!!!!! */
+
+.work-title {
+  margin-bottom: 50px;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.work {
+  margin-bottom: 72px;
+}
+.work-list {
+  display: flex;
+  margin: 0 -22px;
+  justify-content: center;
+}
+.work-item {
+  margin: 0 22px;
+  width: 370px;
+  height: 294px;
+}
+/* ПРАЦІВНИКИ!!!!!! */
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 95px;
+}
+.team-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-item {
+  margin: 0 15px;
+}
+.team-text {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.team-text-work {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* ФУтер!!!!!!!! */
+.footer {
+  background: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-two {
+  color: var(--main-title-color);
+}
+.footer-nav {
+  margin: 20px 0 0 215px;
+}
+.footer-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+.footer-mail-tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* -------------ПОРТФОЛІО------------ */
+
+.button-portfolio-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.button-portfolio-list:hover,
+.button-portfolio-list:focus {
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+}
+.foto-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.foto-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
