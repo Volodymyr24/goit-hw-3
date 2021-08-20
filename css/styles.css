@@ -10,7 +10,20 @@ body {
   font-family: "Roboto", sans-serif;
   background: var(--main-title-color);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .list {
   list-style: none;
   padding: 0;
@@ -23,12 +36,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1540px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* HEDER!!!!!!!!!!!!! */
 
 .header-div {
+  border: 1px solid #ececec;
   display: flex;
   align-items: center;
 
@@ -273,6 +287,25 @@ body {
 }
 
 /* -------------ПОРТФОЛІО------------ */
+.hide {
+  display: none;
+}
+.button-box {
+  margin-bottom: 4px;
+}
+.section-portfolio {
+  margin-top: 268px;
+}
+
+.button-portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: calc(100% / 4 - 4px);
+  width: 611px;
+  height: 54px;
+  margin-left: 513px;
+  margin-right: auto;
+}
 
 .button-portfolio-list {
   font-family: Roboto;
@@ -283,11 +316,43 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  border: 1px solid #f5f4fa;
+  border-radius: 4px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .button-portfolio-list:hover,
 .button-portfolio-list:focus {
   color: var(--main-title-color);
   background-color: var(--accent-color);
+}
+.card-box {
+  margin-left: 233px;
+  margin-right: auto;
+  width: 1170px;
+  margin-bottom: 104px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.card-set > .card-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  /* border: 1px solid #eeeeee; */
+}
+
+.text-box {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 .foto-title {
   font-style: normal;
@@ -296,6 +361,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
 .foto-text {
   font-style: normal;
