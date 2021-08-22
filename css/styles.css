@@ -6,7 +6,6 @@
 }
 
 body {
-  width: 1600px;
   font-family: "Roboto", sans-serif;
   background: var(--main-title-color);
 }
@@ -19,7 +18,7 @@ h6,
 p {
   margin: 0;
 }
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -35,21 +34,21 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1540px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* HEDER!!!!!!!!!!!!! */
-
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-div {
-  border: 1px solid #ececec;
   display: flex;
   align-items: center;
 
   height: 80px;
 }
 .logo {
-  margin-left: 216px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -93,7 +92,6 @@ p {
 }
 .header-nav .header-nav-item + .header-nav-item {
   margin-left: 50px;
-  margin-right: 215px;
 }
 
 .header-mail-tel {
@@ -121,8 +119,7 @@ p {
   margin-bottom: 30px;
 
   padding-top: 200px;
-  padding-left: 436px;
-  padding-right: 447px;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -157,7 +154,7 @@ p {
 .about-list {
   display: flex;
   margin-top: 95px;
-  margin: 95px 200px 115px 200px;
+  margin: 95px 0 115px;
 }
 .about-item {
   flex: 1 1 auto;
@@ -165,6 +162,7 @@ p {
   width: 270px;
   height: 101px;
 }
+
 .about-title {
   margin: 0 0 10px 0;
   font-style: normal;
@@ -267,7 +265,10 @@ p {
   color: var(--main-title-color);
 }
 .footer-nav {
-  margin: 20px 0 0 215px;
+  margin: 20px 0 0 0;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 .footer-address {
   font-style: normal;
@@ -303,7 +304,7 @@ p {
   flex-basis: calc(100% / 4 - 4px);
   width: 611px;
   height: 54px;
-  margin-left: 513px;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -327,9 +328,8 @@ p {
   background-color: var(--accent-color);
 }
 .card-box {
-  margin-left: 233px;
+  margin-left: auto;
   margin-right: auto;
-  width: 1170px;
   margin-bottom: 104px;
 }
 .card-set {
@@ -341,18 +341,24 @@ p {
   margin-left: -30px;
   margin-top: -30px;
 }
+
 .card-set > .card-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  /* border: 1px solid #eeeeee; */
+
+  box-sizing: border-box;
 }
 
 .text-box {
-  margin-top: 20px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .foto-title {
   font-style: normal;
