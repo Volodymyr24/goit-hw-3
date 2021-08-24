@@ -187,7 +187,9 @@ img {
 }
 
 /* РОБОТА фото!!!!!!! */
-
+.work {
+  padding-bottom: 77px;
+}
 .work-title {
   margin-bottom: 50px;
   margin-top: 0px;
@@ -202,13 +204,13 @@ img {
 
 .work-list {
   display: flex;
-  margin: 0 -22px;
+
   justify-content: center;
+  margin-right: -44px;
+  flex-basis: calc(100% / 3 - 44px);
 }
-.work-item {
-  margin: 0 22px;
-  width: 370px;
-  height: 294px;
+.work-item:not(:last-child) {
+  margin-right: 44px;
 }
 /* ПРАЦІВНИКИ!!!!!! */
 .section-team {
@@ -238,9 +240,11 @@ img {
 .team-list {
   display: flex;
   justify-content: center;
+  margin-right: -30px;
+  flex-basis: calc(100% / 4 - 30px);
 }
-.team-item {
-  margin: 0 15px;
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-text-p {
   padding: 30px 0;
@@ -309,13 +313,14 @@ img {
   padding-top: 95px;
   padding-bottom: 105px;
 }
-
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
 .button-portfolio {
   display: flex;
-  justify-content: space-between;
-  flex-basis: calc(100% / 4 - 4px);
-  width: 611px;
-  height: 54px;
+  justify-content: center;
+  flex-basis: calc(100% / 4 - 8px);
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -337,6 +342,7 @@ img {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+
 .button-portfolio-list:hover,
 .button-portfolio-list:focus {
   color: var(--main-title-color);
