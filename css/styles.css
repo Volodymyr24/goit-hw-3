@@ -162,11 +162,13 @@ img {
 }
 .about-item {
   flex: 1 1 auto;
-  margin: 0 15px;
+
   width: 270px;
   height: 101px;
 }
-
+.about-box:not(:last-child) {
+  margin-right: 30px;
+}
 .about-title {
   margin: 0 0 10px 0;
   font-style: normal;
@@ -204,13 +206,9 @@ img {
 
 .work-list {
   display: flex;
-
-  justify-content: center;
-  margin-right: -44px;
-  flex-basis: calc(100% / 3 - 44px);
 }
 .work-item:not(:last-child) {
-  margin-right: 44px;
+  margin-right: 30px;
 }
 /* ПРАЦІВНИКИ!!!!!! */
 .section-team {
@@ -239,9 +237,6 @@ img {
 
 .team-list {
   display: flex;
-  justify-content: center;
-  margin-right: -30px;
-  flex-basis: calc(100% / 4 - 30px);
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
